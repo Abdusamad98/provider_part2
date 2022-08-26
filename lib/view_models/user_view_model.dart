@@ -20,7 +20,7 @@ class UserViewModel extends ChangeNotifier {
     notifyListeners();
   }
 
-  void getUserData() async {
+  void getUserDataAndSave() async {
     isLoading = true;
     notifyListeners();
     userData = await userRepository.getUserData();
